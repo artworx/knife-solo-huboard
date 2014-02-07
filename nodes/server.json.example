@@ -1,0 +1,11 @@
+{
+  "huboard": {
+    "socket_backend": "http://server",
+    "secret": "github secret",
+    "client_id": "github client_id"
+  },
+
+  "run_list":[
+    "recipe[huboard]"
+  ]
+}

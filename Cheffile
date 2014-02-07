@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'apt'
+cookbook 'build-essential'
+cookbook 'rvm', git: 'git://github.com/fnichol/chef-rvm.git'
+cookbook 'sudo'
+cookbook 'nginx'
+cookbook 'couchdb'
+cookbook 'memcached'

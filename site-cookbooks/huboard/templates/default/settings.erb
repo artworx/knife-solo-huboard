@@ -1,0 +1,17 @@
+# TODO: read this from a yaml
+set :session_secret, "<%= @session_secret%>"  # from github authorized application
+set :secret_key, "<%= @secret_key %>"  # from github authorized application
+set :team_id, '' # redundant?
+set :user_name, '' # redundant?
+set :password, '' # redundant?
+set :socket_backend, '<%= @socket_backend %>' # Host where huboard app can be accessed - for github web hook callbacks
+set :socket_secret, '' # shared secret for confirming push came from github - optional
+set :couchdb_server, 'http://127.0.0.1:5984'
+set :cache_config, {:servers => '127.0.0.1,192.168.0.254', # memcached servers
+                    :username => '',
+                    :password => ''}
+
+set :github_options, {:secret    => '<%= @secret %>',
+                      :client_id => '<%= @client_id %>',
+                      :scopes => "user,repo"}
+
